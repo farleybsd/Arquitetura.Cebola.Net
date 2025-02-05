@@ -1,0 +1,25 @@
+
+1. Criar uma Blank Solution
+
+2. Open File na solution Criar Duas Pastas
+2.0 Ecommerce.sln
+2.1 src
+2.2 test
+
+3. Primeiro Projeto Api
+3.1 NomedDaSolucao.Api (Ecommerce.Api) dentro da pasta SRC
+
+4. Primeiro Projeto Application
+4.1 NomedDaSolucao.Api (Ecommerce.Application) dentro da pasta SRC (Class Librabry)
+
+5. Primeiro Projeto Domain
+5.1 NomedDaSolucao.Api (Ecommerce.Domain) dentro da pasta SRC (Class Librabry)
+
+5. Primeiro Projeto Domain Service
+5.1 NomedDaSolucao.Api (Ecommerce.Domain.Service) dentro da pasta SRC (Class Librabry)
+
+6. Primeiro Projeto Domain Core
+6.1 NomedDaSolucao.Api (Ecommerce.Domain.Core) dentro da pasta SRC (Class Librabry)
+
+7. Primeiro Projeto Infrastructure
+7.1 NomedDaSolucao.Api (Ecommerce.Infrastructure) dentro da pasta SRC (Class Librabry)

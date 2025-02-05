@@ -1,0 +1,14 @@
+1. Versao do Docker
+docker --version 
+
+2. Baixando a imagem do ravem db
+docker pull ravendb/ravendb
+
+3. Criando Container
+docker run -d --name ravendb -p 8080:8080 -p 38888 -p 443:443 ravendb/ravendb
+
+4. Acesando o Ravem 
+http://localhost:8080/
+
+5. Criando DataBase
+EcommerceDb
