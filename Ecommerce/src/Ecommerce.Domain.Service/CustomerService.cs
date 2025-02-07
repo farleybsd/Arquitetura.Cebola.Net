@@ -1,4 +1,5 @@
-﻿namespace Ecommerce.Domain.Service
+﻿
+namespace Ecommerce.Domain.Service
 {
     public class CustomerService : ICustomerService
     {
@@ -12,6 +13,10 @@
         public void SaveCustomer(Customer customer)
         {
             ValidateEmail(customer.Email);
+            customer.IsActive = true;
+            customer.CreatedDate = DateTime.Now;
+            customer.Address.IsActive= true;
+            customer.Address.CreatedDate= DateTime.Now;
             _customerRepository.Insert(customer);
         }
 
@@ -55,6 +60,26 @@
             {
                 return false;
             }
+        }
+
+        public void UpdateCustomer(Customer customer)
+        {
+            _customerRepository.Update(customer);
+        }
+
+        public void DeleteCustomer(string id)
+        {
+            _customerRepository.Delete(id);
+        }
+
+        public IEnumerable<Customer> GetAll()
+        {
+           return _customerRepository.GetAll();
+        }
+
+        public Customer GetCustomerById(string id)
+        {
+            return _customerRepository.GetCustomer(id);
         }
     }
 }

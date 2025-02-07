@@ -12,3 +12,5 @@ global using Microsoft.Extensions.DependencyInjection.Extensions;
 global using Microsoft.Extensions.Options;
 global using Raven.Client.Documents;
 global using Raven.Client.Documents.Session;
+global using Ecommerce.Application;
+global using Ecommerce.Application.Interfaces;

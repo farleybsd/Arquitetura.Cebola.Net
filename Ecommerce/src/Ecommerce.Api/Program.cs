@@ -1,11 +1,14 @@
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
+builder.Services.Configure<RavenDbSettings>(builder.Configuration.GetSection("RavenDbSettings"));
 builder.Services.AddRavenDb();
 builder.Services.AddRepositories();
 builder.Services.AddDomainServices();
 builder.Services.AddMappers();
+builder.Services.AddApplicationServices();
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
