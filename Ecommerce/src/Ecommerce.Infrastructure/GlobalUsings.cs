@@ -1,0 +1,14 @@
+﻿global using Ecommerce.Application.Dtos;
+global using Ecommerce.Application.Mappers;
+global using Ecommerce.Application.Mappers.Interfaces;
+global using Ecommerce.Domain.Core.Interfaces.Repositories;
+global using Ecommerce.Domain.Core.Interfaces.Services;
+global using Ecommerce.Domain.Model;
+global using Ecommerce.Domain.Service;
+global using Ecommerce.Infrastructure.CrossCutting.Options;
+global using Ecommerce.Infrastructure.Data.Repositories;
+global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.Extensions.DependencyInjection.Extensions;
+global using Microsoft.Extensions.Options;
+global using Raven.Client.Documents;
+global using Raven.Client.Documents.Session;
